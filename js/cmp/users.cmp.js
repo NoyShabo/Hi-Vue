@@ -4,7 +4,7 @@ Vue.component('users', {
         <section v-if="!selectedUser">
             <ul> 
                <li v-for="(user,idx) in this.users" v-on:click="onSelectedUser(user.id)">
-                <img v-bind:src="'../../img/img-users/'+ user.imgId +'.png'">
+                <img v-bind:src="'./img/img-users/'+ user.imgId +'.png'">
                     {{ user.name }}
                     <button v-on:click="removeUser(user.id, $event)">X</button>
                 </li>
