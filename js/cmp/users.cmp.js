@@ -2,7 +2,7 @@ Vue.component('users', {
     template: `
     <section class="users">
         <section v-if="!selectedUser">
-            <ul>
+            <ul> 
                 <li v-for="(user,idx) in users" v-on:click="onSelectedUser(user.id)">
                 <img v-bind:src="'./img/img-users/'+ user.imgId +'.png'">
                     {{ user.name }}
