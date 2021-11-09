@@ -1,0 +1,158 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.show-time {
+    margin: 0 auto;
+    width: 200px;
+    /* background-color: lightcoral; */
+    padding: 20px;
+    box-shadow: 1px 4px 6px 0px #252828;
+    font-family: fantasy;
+}
+
+.light {
+    background: rgb(161, 161, 161);
+    color: black;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+}
+
+.countDown {
+    font-size: 2rem;
+}
+
+.redtxt {
+    color: Red;
+}
+
+.users ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.users li {
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    background-color: #f05478bd;
+    box-shadow: 2px 3px 11px 4px #e91e4fbd;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.users li:hover {
+    transform: scale(1.2);
+}
+
+.users li button {
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 2px;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 20px;
+}
+
+.users img {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+}
+
+.addUserModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightskyblue;
+    box-shadow: 2px 3px 11px 4px lightskyblue;
+    padding: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border: 0.2px rgb(65, 181, 253) solid;
+}
+
+.container-flex {
+    display: flex;
+    margin: 10px;
+}
+
+input {
+    border: none;
+}
+
+.addUserModal button {
+    border: none;
+    background-color: rgb(248, 91, 91);
+    padding: 5px;
+    color: white;
+}
+
+.container-flex button {
+    margin-inline-start: 5px;
+    background-color: rgb(65, 181, 253);
+}
+
+.btnAdd {
+    background-color: rgb(248, 91, 91);
+    padding: 15px;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.input-msg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: red;
+}
+
+.btnCancel {
+    margin-top: 20px;
+}
+
+.info-user {
+    display: flex;
+    justify-content: center;
+}
+
+.info-user>*:nth-child(1) {
+    margin-inline-end: 40px;
+}
+
+.btnSwich {
+    background-color: rgb(255, 154, 154);
+    padding: 5px;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    margin-top: 20px;
+}
+
+.show-cords {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+}
